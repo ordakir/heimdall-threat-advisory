@@ -1,1 +1,228 @@
+/*=====================================================================================
+HEADER
+=====================================================================================*/
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.96);
+  vorder-bottom: 1px solid rgba(14, 42, 71, 0.10);
+
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  max-width: var(--max-width);
+  min-heigh: 76px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Marca? */
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.nav-brand span {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Navegachon */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-menu a {
+  position: relative;
+
+  color: var(--dark);
+  text-decoration: none;
+
+  font-size: 0.92rem;
+  font-weight: 500;
+
+  transition:
+    color var(--transition),
+    opacty var(--transition);
+}
+
+.nav-menu a:hover {
+  color: var(--secondary);
+}
+
+/*Indicador inferior nigga*/
+
+.nav-menu a:not(.nav-cta)::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--accent);
+
+  transition: widht var(--transition);
+}
+
+.nav-menu a:not(.nav-cta):hover::after {
+  width: 100%;
+}
+
+/* CTA */
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 0 18px;
+
+  border-radius: 6px;
+
+  background: var(--primary);
+  color: var(--white) !important;
+
+  font-weight: 600 !important;
+
+  transition:
+    background var(--transition),
+    transform var(--transition);
+}
+
+.nav-cta:hover {
+  background: var(--secondary);
+  transform: translateY(-1px);
+}
+
+/* Boton movil? */
+
+.nav-toggle {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: 1px solid rgba(14, 42, 71, 0.15);
+  border-radius: 6px;
+
+  background: var(--white);
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+
+  width: 20px;
+  height: 2px;
+
+  margin: 4px auto;
+
+  background: var(--primary);
+
+  transition: transform var(--transition);
+}
+
+/* =============================================================
+RESPONSIVE HEADER
+==============================================================*/
+@media (max-width: 850px) {
+  .navbar {
+    min-height: 68px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 68px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 24px;
+
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+
+    background: var(--white);
+    border-bottom: 1px solid rgba(14, 72, 71, 0.10);
+
+    box-shadow: var(--shadow);
+  }
+
+  .nav-menu.is-open {
+    display: flex;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 12px 8px;
+  }
+
+  .nav-menu a:not(.nav-cta)::aftger {
+    display: none;
+  }
+
+  .nav-cta {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .nav-brand span {
+    font-size: 0.82rem;
+  }
+
+  .nav-brand img {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 
