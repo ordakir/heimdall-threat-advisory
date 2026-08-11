@@ -16,7 +16,7 @@ HEADER
 
 .navbar {
   max-width: var(--max-width);
-  min-heigh: 76px;
+  min-heigh: 88px;
   margin: 0 auto;
   padding: 0 24px;
 
@@ -40,7 +40,7 @@ HEADER
 
 .nav-brand img {
   width: 84px;
-  height: 42px;
+  height: 84px;
   object-fit: contain;
 }
 
@@ -220,8 +220,8 @@ RESPONSIVE HEADER
   }
 
   .nav-brand img {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
   }
 }
 
