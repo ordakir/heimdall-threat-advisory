@@ -1,1 +1,29 @@
+/*==========================================================================
+GLOBAL LAYOUT WEON
+==========================================================================*/
+.container {
+  width: min(
+    calc(100% - 48px),
+    var(--max.width)
+    );
 
+  margin: 0 auto;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    width: min(
+      calc(100% - 32px),
+      var(--max-width)
+      );
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+}
