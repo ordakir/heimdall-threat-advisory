@@ -12,7 +12,7 @@ if (navToggle && navMenu) {
       );
   });
 
-  navLinks.forEach(link) => {
+  navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.clasList.remove("is-open");
 
