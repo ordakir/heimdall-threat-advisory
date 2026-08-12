@@ -14,7 +14,7 @@ if (navToggle && navMenu) {
 
   navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    navMenu.clasList.remove("is-open");
+    navMenu.classList.remove("is-open");
 
     navToggle.setAttribute(
       "aria-expanded",
