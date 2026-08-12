@@ -26,7 +26,7 @@ HEADER
   gap: 32px;
 }
 
-/* Marca? */
+/* Marca */
 
 .nav-brand {
   display: flex;
@@ -39,7 +39,7 @@ HEADER
 }
 
 .nav-brand img {
-  width:150px;
+  width:170px;
   height: 84px;
   object-fit: contain;
 }
