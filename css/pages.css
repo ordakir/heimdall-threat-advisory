@@ -522,13 +522,11 @@ HOME - SERVICIOS MA NIGGA
    ========================================================= */
 
 .methodology-section {
-    background: var(--gray-light);
+    background: var(--light);
 }
 
 
-/* ---------------------------------------------------------
-   Introducción
-   --------------------------------------------------------- */
+/* Introducción */
 
 .methodology-intro {
     max-width: 820px;
