@@ -9,14 +9,14 @@ HEADER
   width: 100%;
 
   background: rgba(255, 255, 255, 0.96);
-  vorder-bottom: 1px solid rgba(14, 42, 71, 0.10);
+  border-bottom: 1px solid rgba(14, 42, 71, 0.10);
 
   backdrop-filter: blur(10px);
 }
 
 .navbar {
   max-width: var(--max-width);
-  min-heigh: 98px;
+  min-height: 98px;
   margin: 0 auto;
   padding: 0 24px;
 
