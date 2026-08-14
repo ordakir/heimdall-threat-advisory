@@ -4,7 +4,7 @@ GLOBAL LAYOUT WEON
 .container {
   width: min(
     calc(100% - 48px),
-    var(--max.width)
+    var(--max-width)
     );
 
   margin: 0 auto;
