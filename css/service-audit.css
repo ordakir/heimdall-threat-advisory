@@ -234,6 +234,16 @@
     line-height: 1.7;
 }
 
+.service-cta .btn-primary {
+   background: var(--white);
+   color: var(--primary);
+}
+
+.service-cta .btn-primary:hover {
+   background: var(--light);
+   color: var(--primary);
+}
+
 /* ---------------------------------------------------------
    RESPONSIVE
    --------------------------------------------------------- */
