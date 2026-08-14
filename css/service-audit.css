@@ -1,1 +1,271 @@
+/* =========================================================
+   AUDITORÍA TÉCNICA — PÁGINA ÍNDICE
+   ========================================================= */
 
+.service-hero {
+    background: var(--white);
+    padding: 130px 0 100px;
+}
+
+.service-hero h1 {
+    max-width: 850px;
+    margin: 18px 0 28px;
+
+    color: var(--primary);
+
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 1.05;
+}
+
+.service-hero-lead {
+    max-width: 760px;
+    color: var(--gray);
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   PROBLEMA
+   --------------------------------------------------------- */
+
+.service-problem {
+    background: var(--light);
+    padding: 90px 0;
+}
+
+.service-problem h2 {
+    max-width: 900px;
+    margin: 18px 0 28px;
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.service-problem p {
+    max-width: 850px;
+    margin-bottom: 18px;
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   MODALIDADES
+   --------------------------------------------------------- */
+
+.audit-options {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 18px 0;
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.section-heading p {
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.audit-options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.audit-option-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 42px;
+    background: var(--white);
+    border: 1px solid rgba(14, 42, 71, 0.12);
+    border-radius: var(--radius);
+    box-shadow:
+        0 8px 30px rgba(14, 42, 71, 0.06);
+}
+
+.audit-option-number {
+    margin-bottom: 22px;
+
+    color: var(--accent);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.audit-option-card h3 {
+    margin-bottom: 18px;
+
+    color: var(--primary);
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.audit-option-highlight {
+    margin-bottom: 18px;
+
+    color: var(--accent);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.audit-option-card > p:not(.audit-option-highlight) {
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.audit-option-card ul {
+    margin: 25px 0 35px;
+    padding-left: 20px;
+
+    color: var(--gray);
+    line-height: 2;
+}
+
+.audit-option-card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* ---------------------------------------------------------
+   METODOLOGÍA
+   --------------------------------------------------------- */
+
+.audit-methodology {
+    background: var(--light);
+    padding: 90px 0;
+}
+
+.audit-methodology-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.audit-methodology h2 {
+    margin-top: 18px;
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.audit-methodology p {
+    margin-bottom: 18px;
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------
+   VALOR
+   --------------------------------------------------------- */
+
+.audit-value {
+    background: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.audit-value h2 {
+    max-width: 850px;
+
+    margin: 18px auto 25px;
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.audit-value p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--gray);
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   CTA
+   --------------------------------------------------------- */
+
+.service-cta {
+    background: var(--primary);
+    padding: 90px 0;
+    text-align: center;
+}
+
+.service-cta h2 {
+    max-width: 850px;
+
+    margin: 0 auto 20px;
+    color: var(--white);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.service-cta p {
+    max-width: 650px;
+    margin: 0 auto 32px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+    .service-hero {
+        padding: 100px 0 75px;
+    }
+
+    .audit-options-grid,
+    .audit-methodology-content {
+        grid-template-columns: 1fr;
+    }
+
+    .audit-methodology-content {
+        gap: 35px;
+    }
+
+    .audit-option-card {
+        padding: 32px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .service-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .audit-option-card {
+        padding: 28px;
+    }
+
+}
