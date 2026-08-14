@@ -523,6 +523,10 @@ HOME - SERVICIOS MA NIGGA
 
 .methodology-section {
     background: var(--light);
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    scroll-margin-top: 100px;
 }
 
 
