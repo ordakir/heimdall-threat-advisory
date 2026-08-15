@@ -95,6 +95,17 @@
     border-radius: var(--radius);
     box-shadow:
         0 8px 30px rgba(14, 42, 71, 0.06);
+
+   transition:
+      transform var(--transition),
+      box-shadow var(--transition),
+      border-color var(--transition);
+}
+
+.audit-option-card:hover {
+   transform: translateY(-5px);
+   border-color: rgba(14, 42, 71, 0.22);
+   box-shadow: var(--shadow);
 }
 
 .audit-option-number {
