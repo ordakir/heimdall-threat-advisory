@@ -98,13 +98,19 @@
 }
 
 .audit-option-number {
-    margin-bottom: 22px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-    color: var(--accent);
+   width: 42px;
+   height: 42px;
+   margin-bottom: 24px;
+   border-radius: 50%;
 
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
+   background: var(--primary);
+   color: var(--white);
+   font-size: 0.82rem;
+   font-weight: 700;
 }
 
 .audit-option-card h3 {
