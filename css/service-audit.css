@@ -261,6 +261,289 @@
    color: var(--primary);
 }
 
+
+/* ---------------------------------------------------------
+   PÁGINAS DE MODALIDAD — MA / AU - HERO DE MODALIDAD
+   --------------------------------------------------------- */
+.audit-detail-hero {
+    background: var(--white);
+    padding: 120px 0 90px;
+}
+
+.audit-detail-hero-content {
+    max-width: 850px;
+}
+
+.audit-detail-label {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: var(--accent);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.audit-detail-hero h1 {
+    max-width: 850px;
+    margin: 0 0 22px;
+
+    color: var(--primary);
+    font-size: clamp(2.6rem, 5vw, 4.2rem);
+    line-height: 1.08;
+}
+
+.audit-detail-subtitle {
+    margin: 0 0 28px;
+
+    color: var(--primary);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.audit-detail-intro {
+    max-width: 760px;
+    margin: 0;
+
+    color: var(--gray);
+    font-size: 1.12rem;
+    line-height: 1.75;
+}
+
+/* ---------------------------------------------------------
+   PROBLEMA DE MODALIDAD
+   --------------------------------------------------------- */
+
+.audit-detail-problem {
+    background: var(--light);
+    padding: 90px 0;
+}
+
+.audit-detail-problem-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.audit-detail-problem h2 {
+    margin: 18px 0 28px;
+
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.audit-detail-problem p {
+    max-width: 800px;
+    margin: 0 0 18px;
+
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   ALCANCE
+   --------------------------------------------------------- */
+
+.audit-scope {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+.audit-scope-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.audit-scope-card {
+    padding: 36px;
+    background: var(--white);
+    border: 1px solid rgba(14, 42, 71, 0.12);
+    border-radius: var(--radius);
+
+    box-shadow:
+        0 8px 30px rgba(14, 42, 71, 0.06);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.audit-scope-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(14, 42, 71, 0.22);
+    box-shadow: var(--shadow);
+}
+
+.audit-scope-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 24px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.audit-scope-card h3 {
+    margin-bottom: 14px;
+    color: var(--primary);
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.audit-scope-card p {
+    margin: 0;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   DOCUMENTACIÓN
+   --------------------------------------------------------- */
+
+.audit-documents {
+    background: var(--light);
+    padding: 100px 0;
+}
+
+.audit-documents-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.audit-document-card {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    background: var(--white);
+    border: 1px solid rgba(14, 42, 71, 0.12);
+    border-radius: var(--radius);
+
+    box-shadow:
+        0 8px 30px rgba(14, 42, 71, 0.06);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.audit-document-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(14, 42, 71, 0.22);
+    box-shadow: var(--shadow);
+}
+
+.audit-document-label {
+    display: block;
+    margin-bottom: 14px;
+
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.audit-document-card h3 {
+    margin: 0 0 14px;
+
+    color: var(--primary);
+    font-size: 1.4rem;
+    line-height: 1.25;
+}
+
+.audit-document-card p {
+    margin: 0 0 24px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.audit-document-card .text-link {
+    margin-top: auto;
+}
+
+
+/* ---------------------------------------------------------
+   METODOLOGÍA DE MODALIDAD
+   --------------------------------------------------------- */
+
+/* Reutiliza los componentes PVTE
+   definidos en pages.css.
+*/
+
+.audit-detail-methodology {
+    background: var(--white);
+    padding: 90px 0;
+}
+
+.audit-detail-methodology-intro {
+    max-width: 800px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.audit-detail-methodology-intro h2 {
+    margin: 18px 0 24px;
+
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.audit-detail-methodology-intro p {
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   VALOR DE MODALIDAD
+   --------------------------------------------------------- */
+
+.audit-detail-value {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+.audit-detail-value-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.audit-detail-value h2 {
+    margin: 18px 0 25px;
+
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.audit-detail-value p {
+    margin: 0 0 18px;
+
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
 /* ---------------------------------------------------------
    RESPONSIVE
    --------------------------------------------------------- */
@@ -283,6 +566,27 @@
         padding: 32px;
     }
 
+   .audit-scope-grid,
+    .audit-documents-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audit-detail-hero {
+        padding: 100px 0 75px;
+    }
+
+    .audit-scope,
+    .audit-detail-methodology,
+    .audit-detail-value,
+    .audit-documents {
+        padding: 75px 0;
+    }
+
+    .audit-scope-card,
+    .audit-document-card {
+        padding: 32px;
+    }
+
 }
 
 
@@ -292,6 +596,15 @@
     }
 
     .audit-option-card {
+        padding: 28px;
+    }
+
+   .audit-detail-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .audit-scope-card,
+    .audit-document-card {
         padding: 28px;
     }
 
