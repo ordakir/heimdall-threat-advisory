@@ -557,6 +557,8 @@
 
 .training-docs-grid {
    grid-template-columns: repeat(2, minmax(280px, 520px));
+   max-width: 900px;
+   margin: 0 auto;
    justify-content: center;
 }
    
