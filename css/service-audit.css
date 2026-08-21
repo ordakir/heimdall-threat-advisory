@@ -623,5 +623,11 @@
     .audit-document-card {
         padding: 28px;
     }
-
 }
+
+
+@media (max-width: 800px) {
+      .training-docs-grid {
+         grid-template-columns: 1fr;
+      }
+   }
