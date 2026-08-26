@@ -49,6 +49,8 @@
 }
 
 .about-block {
+    display: flex;
+    flex-direction: column;
     padding: 42px;
 
     background: var(--white);
@@ -57,6 +59,17 @@
 
     box-shadow:
         0 8px 30px rgba(14, 42, 71, 0.06);
+    
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-colum var(--transform);
+}
+
+.about-block:hover {
+    transform: translateY(-5px);
+    border-color: rgba(14, 42, 71, 0.22);
+    box-shadow: var(shadow);
 }
 
 .about-block h2 {
@@ -177,10 +190,27 @@
 }
 
 .about-focus-item {
-    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
 
     background: var(--light);
+    border: 1px solid rgba(14, 42, 71, 0.08);
     border-radius: var(--radius);
+
+    box-shadow:
+        0 8px 30px rgba(14, 42, 71, 0.04);
+
+    transition: 
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.about-focus-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(14, 42, 71, 0.18);
+    box-shadow: var(--shadow);
 }
 
 .about-focus-number {
