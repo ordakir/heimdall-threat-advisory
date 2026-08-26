@@ -63,13 +63,13 @@
     transition:
         transform var(--transition),
         box-shadow var(--transition),
-        border-colum var(--transform);
+        border-colum var(--transition);
 }
 
 .about-block:hover {
     transform: translateY(-5px);
     border-color: rgba(14, 42, 71, 0.22);
-    box-shadow: var(shadow);
+    box-shadow: var(--shadow);
 }
 
 .about-block h2 {
