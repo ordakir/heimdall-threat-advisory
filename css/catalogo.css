@@ -1,0 +1,353 @@
+/* == HERO CATÁLOGO DE SERVICIOS == */
+
+.catalog-hero {
+    background: var(--white);
+    padding: 130px 0 90px;
+}
+
+.catalog-hero h1 {
+    max-width: 900px;
+    margin: 18px 0 28px;
+
+    color: var(--primary);
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 1.05;
+}
+
+.catalog-hero-lead {
+    max-width: 780px;
+
+    color: var(--gray);
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+.catalog-price-note {
+    max-width: 760px;
+
+    margin-top: 28px;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent);
+
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* -- REFERENCIA SOBRE ENTREGABLES -- */
+
+.catalog-reference {
+    background: var(--light);
+    padding: 90px 0;
+}
+
+.catalog-reference .section-heading {
+    margin-bottom: 0;
+}
+
+.catalog-reference .section-heading p + p {
+    margin-top: 18px;
+}
+
+/* -- CATÁLOGO DE SERVICIOS -- */
+
+.catalog-services {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+.catalog-services > .container > .section-heading {
+    margin-bottom: 70px;
+}
+
+/* -- BLOQUE INDIVIDUAL DE SERVICIO -- */
+
+.catalog-service {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.catalog-service + .catalog-service {
+    margin-top: 90px;
+}
+
+.catalog-service-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+
+    margin-bottom: 35px;
+}
+
+.catalog-service-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.catalog-service-header h3 {
+    margin: 0 0 10px;
+
+    color: var(--primary);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    line-height: 1.2;
+}
+
+.catalog-service-header p {
+    max-width: 800px;
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.7;
+}
+
+/* -- TARJETAS TÉCNICA / COMERCIAL -- */
+
+.catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
+
+    border-radius: var(--radius);
+    border: 1px solid rgba(14, 42, 71, 0.12);
+
+    box-shadow:
+        0 8px 30px rgba(14, 42, 71, 0.06);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.catalog-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(14, 42, 71, 0.22);
+    box-shadow: var(--shadow);
+}
+
+/* -- TARJETA TÉCNICA -- */
+
+.catalog-card-technical {
+    background: var(--white);
+}
+
+.catalog-card-label {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: var(--accent);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.catalog-card h4 {
+    margin: 0 0 20px;
+
+    color: var(--primary);
+
+    font-size: 1.45rem;
+    line-height: 1.25;
+}
+
+.catalog-card ul {
+    margin: 0;
+    padding-left: 20px;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+}
+
+.catalog-card li + li {
+    margin-top: 8px;
+}
+
+.catalog-card-note {
+    margin-top: 24px;
+
+    color: var(--gray);
+
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+/* -- TARJETA COMERCIAL -- */
+
+.catalog-card-commercial {
+    background: var(--light);
+}
+
+.catalog-data {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px 0 25px;
+}
+
+.catalog-data > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid rgba(14, 42, 71, 0.10);
+}
+
+.catalog-data > div:first-child {
+    border-top: 1px solid rgba(14, 42, 71, 0.10);
+}
+
+.catalog-data span {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.catalog-data strong {
+    color: var(--primary);
+
+    font-size: 0.92rem;
+    text-align: right;
+}
+
+.catalog-card-commercial .text-link {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* -- ORIENTACIÓN -- */
+
+.catalog-orientation {
+    background: var(--light);
+    padding: 90px 0;
+}
+
+.catalog-orientation .section-heading {
+    margin-bottom: 0;
+}
+
+.catalog-orientation .section-heading h2 {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-orientation .section-heading p {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -- CTA -- */
+
+.catalog-cta {
+    background: var(--primary);
+}
+
+.catalog-cta .nav-cta {
+    display: inline-block;
+    padding: 13px 24px;
+
+    background: var(--white);
+    color: var(--primary);
+    border-radius: var(--radius);
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        transform var(--transition);
+}
+
+.catalog-cta .nav-cta:hover {
+    background: var(--light);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* -- RESPONSIVE -- */
+
+@media (max-width: 800px) {
+
+    .catalog-hero {
+        padding: 100px 0 75px;
+    }
+
+    .catalog-services {
+        padding: 80px 0;
+    }
+
+    .catalog-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-service + .catalog-service {
+        margin-top: 70px;
+    }
+
+    .catalog-card {
+        padding: 32px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .catalog-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .catalog-service-header {
+        gap: 15px;
+    }
+
+    .catalog-service-number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .catalog-service-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .catalog-card {
+        padding: 28px;
+    }
+
+    .catalog-data > div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .catalog-data strong {
+        text-align: left;
+    }
+
+}
