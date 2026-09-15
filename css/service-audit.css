@@ -633,3 +633,17 @@
          grid-template-columns: 1fr;
       }
    }
+
+/* =========================================================
+   CATÁLOGO — DOCUMENTACIÓN
+   ========================================================= */
+
+.audit-documents-grid.single-document {
+    display: flex;
+    justify-content: center;
+}
+
+.audit-documents-grid.single-document .audit-document-card {
+    width: 100%;
+    max-width: 520px;
+}
