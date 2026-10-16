@@ -28,7 +28,7 @@ HOME - HERO?
 
   margin: 0 auto 36px;
 
-  pbject-fit: contain;
+  object-fit: contain;
 }
 
 .hero-title {
@@ -64,7 +64,7 @@ HOME - HERO?
 .hero-description {
   max-width: 720px;
 
-  margin: 0 aut 36px;
+  margin: 0 auto 36px;
 
   color: var(--gray);
 
@@ -84,7 +84,7 @@ HOME - HERO?
 .hero-button {
   display: inline-flex;
 
-  align-item: center;
+  align-items: center;
   justify-content: center;
 
   min-height: 44px;
@@ -144,7 +144,7 @@ HOME - HERO?
 }
 
 .hero-scroll::after {
-  conten: "↓";
+  content: "↓";
   display: block;
   margin-top: 4px;
   text-align: center;
@@ -155,7 +155,7 @@ HOME - HERO?
 /* ==============================================================
 HERO RESPONSIVE
 ============================================================== */
-@media (max-widht: 768px) {
+@media (max-width: 768px) {
 
   .hero {
     min-height: calc(100vh - 68px);
@@ -171,7 +171,7 @@ HERO RESPONSIVE
     font-size: 1rem;
   }
 
-  .hero-action {
+  .hero-actions {
     flex-direction: column;
     width: 100%;
   }
@@ -227,13 +227,13 @@ HOME - PROBLEMAS / INCERTIDUMBRE
 
 .problem-card {
   padding: 36px 30px;
-  background: var (--light);
+  background: var(--light);
   border: 1px solid rgba(14, 42, 71, 0.08);
   border-radius: var(--radius);
   text-align: center;
   transition:
     transform var(--transition),
-    box-shadoy var(--transition),
+    box-shadow var(--transition),
     border-color var(--transition);
 }
 
@@ -277,7 +277,7 @@ HOME - PROBLEMAS / INCERTIDUMBRE
   max-width: 800px;
   margin: 0 auto;
   padding: 28px 32px;
-  border-left: 3x solid var(--accent);
+  border-left: 3px solid var(--accent);
   background: var(--light);
   color: var(--primary);
 
@@ -295,7 +295,7 @@ PROBLEM RESPONSIVE
     max-width: 600px;
   }
   .problem-card {
-    padding: 30px, 26px;
+    padding: 30px 26px;
   }
 }
 
@@ -315,6 +315,122 @@ PROBLEM RESPONSIVE
   .problem-conclusion {
     padding: 24px 20px;
     font-size: 1rem;
+  }
+}
+
+/*=======================================================================================
+FOOTER
+=======================================================================================*/
+.site-footer {
+  background: var(--light);
+  border-top: 1px solid rgba(14, 42, 71, 0.10);
+  padding: 72px 0 40px;
+  margin-top: 0;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.footer-contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.footer-contact-info .contact-item {
+  padding: 28px 32px;
+  background: var(--white);
+  border: 1px solid rgba(14, 42, 71, 0.10);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(14, 42, 71, 0.05);
+  transition:
+      border-color var(--transition),
+      background var(--transition),
+      transform var(--transition);
+}
+
+.footer-contact-info .contact-item:hover {
+  border-color: rgba(196, 155, 61, 0.55);
+  transform: translateY(-3px);
+}
+
+.footer-contact-info .contact-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-contact-info .contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+
+  color: var(--accent);
+  background: rgba(196, 155, 61, 0.12);
+  border-radius: 10px;
+
+  transition:
+    background var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.footer-contact-info .contact-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-contact-info .contact-item:hover .contact-icon {
+  color: var(--white);
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.footer-contact-info a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  word-break: break-word;
+  transition: color var(--transition);
+}
+
+.footer-contact-info a:hover {
+  color: var(--accent);
+}
+
+.footer-contact-info .text-link {
+  color: var(--secondary);
+}
+
+.footer-contact-info .text-link:hover {
+  color: var(--accent);
+}
+
+.footer-copyright {
+  padding-top: 28px;
+  border-top: 1px solid rgba(14, 42, 71, 0.10);
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 850px) {
+  .footer-contact-info {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -628,7 +744,7 @@ HOME - SERVICIOS MA NIGGA
     border-radius: 50%;
 
     background: var(--primary);
-    border: 5px solid var(--gray-light);
+    border: 5px solid var(--light);
     color: var(--white);
 
     font-size: 0.78rem;
